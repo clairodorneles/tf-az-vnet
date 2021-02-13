@@ -5,6 +5,11 @@ variable "vnetName" {
   type        = string
 }
 
+variable "vnetRg" {
+  description = "Virtual Network Resource Group"
+  type        = string
+}
+
 variable "vnetLocation" {
   description = "Virtual Network Location"
   type        = string
@@ -12,7 +17,7 @@ variable "vnetLocation" {
 
 variable "vnetAddressSpace" {
   description = "Virtual Network Address Space"
-  type        = string
+  type        = list(string)
 }
 
 variable "vnetTags" {
