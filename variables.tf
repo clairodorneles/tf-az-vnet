@@ -15,11 +15,6 @@ variable "vnetAddressSpace" {
   type        = string
 }
 
-variable "vnetDnsServers" {
-  description = "Virtual Network DNS Server"
-  type        = string
-}
-
 variable "vnetTags" {
   description = "Virtual Network Tags"
   type        = map(string)
